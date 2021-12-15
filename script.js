@@ -11,3 +11,12 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+// var swiper = new Swiper(".mySwiper", {
+//   pagination: {
+//     el: ".swiper-pagination",
+//     effec:"fade",
+//     loop:true,
+//     autoplay:true,
+//     dynamicBullets: true,
+//   },
+// });
