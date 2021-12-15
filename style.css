@@ -125,7 +125,8 @@ left: 0;
               color: white;
               font-size: 2.5rem;
               margin:  0 3rem;
-              width: 60%;
+              line-height: 1.8;
+              width: 50%;
             }
             .swiper-slide:nth-child(1) h1 span , .swiper-slide:nth-child(2) h1 span , .swiper-slide:nth-child(3) h1 span , .swiper-slide:nth-child(4) h1  span, .swiper-slide:nth-child(5) h1 span , .swiper-slide:nth-child(6) h1 span  {
         color: var(--primary-color);
