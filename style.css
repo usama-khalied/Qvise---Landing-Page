@@ -274,7 +274,7 @@ margin: 3rem 1rem;
   font-size: 2.6rem;
 }
 .card-sec .card-row .card-body p {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .card-sec .card-row .card-body a {
   font-size: 2rem;
@@ -362,3 +362,42 @@ align-items: center;
     text-align: center;
     }
  }
+ /* ---partner-sec--- */
+ .partner  .title h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+.partner .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.partner .title span  {
+ margin: 0 auto;
+  padding: .2rem 3rem;
+  background-color: var(--primary-color);
+}
+.owl-carousel .item {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.owl-carousel .item  p{
+font-size: 1.8rem;
+font-weight: bold;
+
+}
+.owl-carousel .item img {
+  width: 200px;
+  margin: 5rem 0 0;
+}
+@media (max-width:820px) {
+  .owl-carousel  {
+height: auto;margin:0 auto;
+  }
+}
+/* ---footer */
