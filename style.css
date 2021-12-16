@@ -9,6 +9,17 @@
 html {
     font-size: 62.5%;
 }
+#loading {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background: url(images/Spinner-1s-200px.gif);
+background-repeat: no-repeat;
+background-size: 10%;
+background-position: center;
+background-color: var(--primary-color);
+z-index: 3;  
+}
 body {
     overflow-x: hidden;
     font-family: sans-serif;
@@ -67,8 +78,49 @@ left: 0;
   .swiper {
     width: 100%;
     height: 100%;
+    position: relative;
   }
-
+.scroll-down {
+  width: 30px;
+  height: 50px;
+  border: 2px solid white;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  border-radius: 50px;
+  bottom: 30px;
+}
+.scroll-down::before, .scroll-down::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  border: 2px solid white;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50% , -50%) rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scrolldown 1s ease-in-out infinite;
+}
+.scroll-down::after {
+  top: 30%;
+}
+@keyframes scrolldown {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60%{
+     opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 90%;
+  }
+}
   .swiper-slide:nth-child(1) {
   background:linear-gradient(rgb(0,0,0,0.8)	, rgb(0,0,0,0.8)), url(images/Qvise_image1.jpg);
   background-size: cover;
@@ -174,6 +226,7 @@ left: 0;
   }
   .swiper-slide:nth-child(1)  , .swiper-slide:nth-child(2)  , .swiper-slide:nth-child(3)  , .swiper-slide:nth-child(4)  , .swiper-slide:nth-child(5)  , .swiper-slide:nth-child(6)  {
     padding: 4rem 2rem 0;
+    height: auto;
            
             }
             .swiper-slide:nth-child(1) p , .swiper-slide:nth-child(2) p, .swiper-slide:nth-child(3) p , .swiper-slide:nth-child(4) p , .swiper-slide:nth-child(5) p , .swiper-slide:nth-child(6) p {
